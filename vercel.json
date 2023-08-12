@@ -15,7 +15,7 @@
       "dest": "server.js"
     },
     {
-      "src": "^(.*)$",
+      "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=0" },
       "dest": "/public/index.html"
     }
