@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "public/**",
-      "use": "@vercel/static"
+      "use": "@vercel/static",
+      "config": {
+        "includeFiles": ["./public"]
+      }
     },
     {
       "src": "index.js",
