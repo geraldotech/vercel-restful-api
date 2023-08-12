@@ -4,6 +4,10 @@ const server = jsonServer.create();
 const router = jsonServer.router("db/db.json");
 const middlewares = jsonServer.defaults();
 
+server.get("/echo", (req, res) => {
+  res.jsonp(req.query);
+});
+
 server.use(middlewares);
 // Add this before server.use(router)
 server.use(
