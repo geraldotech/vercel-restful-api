@@ -6,6 +6,7 @@ const middlewares = jsonServer.defaults();
 
 server.get("/echo", (req, res) => {
   res.jsonp(req.query);
+  console.log(res);
 });
 
 server.use(middlewares);
