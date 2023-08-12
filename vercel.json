@@ -5,29 +5,14 @@
       "src": "server.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["db/db.json"]
+        "includeFiles": ["db.json"]
       }
     }
   ],
   "routes": [
     {
-      "src": "/posts",
-      "dest": "server.js"
-    },
-    {
-      "src": "/",
-      "dest": "index.html"
-    },
-    {
       "src": "/(.*)",
-      "headers": { "cache-control": "s-maxage=1000" },
-      "dest": "/index.html"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "./public/index.html"
+      "dest": "server.js"
     }
   ]
 }
