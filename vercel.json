@@ -5,11 +5,11 @@
       "src": "server.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["db/a/db.json", "public"]
+        "includeFiles": ["db/a/db.json", "public/index.html"]
       }
     }
   ],
-  "files": ["public"],
+  "files": ["public/index.html"],
   "routes": [
     {
       "src": "/(.*)",
