@@ -11,12 +11,12 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/posts",
       "dest": "server.js"
     },
     {
       "src": "/",
-      "dest": "/db"
+      "dest": "/"
     }
   ]
 }
