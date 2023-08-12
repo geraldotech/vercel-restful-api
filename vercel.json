@@ -17,6 +17,7 @@
     {
       "src": "/(.*)",
       "dest": "index.js"
-    }
+    },
+    { "src": "/pages", "dest": "public/post.html" }
   ]
 }
