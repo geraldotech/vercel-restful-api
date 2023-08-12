@@ -21,7 +21,7 @@
     },
     {
       "src": "/public",
-      "dest": "public/index.html"
+      "dest": "db/public/index.html"
     }
   ]
 }
