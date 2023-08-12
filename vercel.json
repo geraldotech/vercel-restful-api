@@ -1,27 +1,20 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "db/a/db.json",
-          "db/a/public/index.html",
-          "db/public/index.html"
-        ]
-      }
-    }
-  ],
-  "files": ["public/index.html"],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    },
-    {
-      "src": "/public",
-      "dest": "db/public/index.html"
-    }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": [
+                    "db/db.json"
+                ]
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
+        }
+    ]
 }
