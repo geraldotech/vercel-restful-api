@@ -19,7 +19,7 @@
       "dest": "index.html"
     },
     {
-      "src": "/page",
+      "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=1000" },
       "dest": "/index.html"
     }
