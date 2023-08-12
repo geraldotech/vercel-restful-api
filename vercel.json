@@ -13,6 +13,10 @@
     {
       "src": "/(.*)",
       "dest": "server.js"
+    },
+    {
+      "src": "/page",
+      "dest": "public/index.html"
     }
   ]
 }
