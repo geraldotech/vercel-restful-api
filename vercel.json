@@ -21,5 +21,5 @@
     { "src": "/pages", "dest": "public/post.html" },
     { "src": "/static/(.*)", "dest": "public/static/$1" }
   ],
-  "outputDirectory": "./public"
+  "outputDirectory": "public"
 }
