@@ -19,7 +19,7 @@
   "routes": [
     { "src": "/(.*)", "dest": "index.js" },
     { "src": "/pages", "dest": "public/post.html" },
-    { "src": "/static/(.*)", "dest": "public/static/$1" 
+    { "src": "/static/(.*)", "dest": "public/static/$1" }
   ],
   "outputDirectory": "./public"
 }
