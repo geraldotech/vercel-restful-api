@@ -5,7 +5,7 @@
       "src": "public",
       "use": "@vercel/static",
       "config": {
-        "includeFiles": ["./public"]
+        "includeFiles": ["public/index.html"]
       }
     },
     {
