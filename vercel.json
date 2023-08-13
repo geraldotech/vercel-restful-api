@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/**",
+      "src": "public",
       "use": "@vercel/static",
       "config": {
         "includeFiles": ["./public"]
@@ -22,5 +22,6 @@
       "dest": "index.js"
     },
     { "src": "/pages", "dest": "public/post.html" }
-  ]
+  ],
+  "outputDirectory": "./public"
 }
