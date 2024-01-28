@@ -1,6 +1,6 @@
 # RESTful API with JSON Server for Vercel
 
-### just fetch https://api-restful-json.vercel.app/{myrouter}
+### just fetch https://api-restful-json.vercel.app
 
 - id
   - posts?id=2
