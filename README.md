@@ -14,6 +14,9 @@
   - posts?id=2
 - like
   - posts?title_like=ea
+- slug
+  - slug=central-de-servico-gerenciamento-nivel-servico
+  - ?slug_like=central-de-servico-gerenciamento-nivel-servico
 
 
 More operators in [https://www.npmjs.com/package/json-server/v/0.17.4#operators](https://www.npmjs.com/package/json-server/v/0.17.4#operators)
