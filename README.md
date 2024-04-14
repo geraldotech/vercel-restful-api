@@ -1,5 +1,13 @@
 # RESTful API with JSON Server for Vercel
 
+- RUN
+- `$ json-server --watch ./db/db.json`
+
+- middlewares ? 
+  - run `node server.json` make surce this file is import the `db.json`
+
+
+
 ### just fetch https://api-restful-json.vercel.app
 
 - id
