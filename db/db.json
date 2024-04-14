@@ -24,6 +24,80 @@
             "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
             "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
         }
-    ]
+    ],
+    "entregasuporte" : [
+  {
+      "id": 1,
+      "title": "Central de Serviço e Gerenciamento de Nível de Serviço",
+      "question": "O principal objetivo de uma central de serviço é ser um ponto central de contato entre os usuários e a TI. No gerenciamento de nível de serviço, são utilizados os dados registrados pela central de serviços sobre os incidentes. Esse gerenciamento tem o propósito de:",
+      "slug": "central-de-servico-gerenciamento-nivel-servico",
+      "answer": "analisar, juntamente com outros dados, se determinado nível de serviço está sendo fornecido."
+  },
+  {
+      "id": 2,
+      "title": "Estruturação de um Service Desk",
+      "question": "Na estruturação de um Service Desk, o componente de informação diz respeito ao conjunto de dados que podem ser utilizados para a oferta de um serviço proativo, que busca o aperfeiçoamento contínuo dos serviços prestados. As categorias de dados comumente utilizadas para melhorar o processo de prestação de serviço são denominadas:",
+      "slug": "estruturacao-service-desk",
+      "answer": "Cliente, Incidente, Status e Resolução."
+  },
+  {
+      "id": 3,
+      "title": "Objetivos do Gerenciamento de Incidente",
+      "question": "O gerenciamento de incidente tem como objetivo resolver os incidentes o mais rápido possível, restabelecendo o serviço normal dentro do prazo acordado nos SLAs. Todo processo deve ter uma forma de avaliação da sua performance, com base em indicadores de desempenho sugeridos na ITIL v3. Nesse contexto, considere os indicadores abaixo.",
+      "slug": "objetivos-gerenciamento-incidente",
+      "answer": "I, II e IV"
+  },
+  {
+      "id": 4,
+      "title": "Dependência da Tecnologia da Informação (TI)",
+      "question": "Para a maioria das organizações, a dependência da Tecnologia da Informação (TI), atualmente, é bastante acentuada. As organizações buscam a TI como uma forma de apoiar o seu crescimento e de buscar soluções para alcançar os seus objetivos estratégicos. Sobre a estratégia de serviço da ITIL v3, é correto afirmar que",
+      "slug": "dependencia-tecnologia-informacao",
+      "answer": "a estratégia de serviço provê direcionamento de como projetar, desenvolver e implementar o gerenciamento de serviço, não apenas como uma capacidade organizacional, mas também como um ativo estratégico."
+  },
+  {
+      "id": 5,
+      "title": "Stakeholders em uma Organização",
+      "question": "De acordo com Freeman (1984), stakeholder em uma organização é, por definição, qualquer grupo ou indivíduo que pode afetar ou ser afetado pela realização dos objetivos dessa empresa. Diante desse conceito, o empregado da empresa pode ser um stakeholder?",
+      "slug": "stakeholders-organizacao",
+      "answer": "Sim, tendo em vista que, por ser do ambiente interno da empresa, ele influencia diretamente no custo do produto ou no serviço oferecido pela empresa."
+  },
+  {
+      "id": 6,
+      "title": "Planejamento de Gerenciamento das Partes Interessadas",
+      "question": "Segundo o Guia PMBOK® , planejar o gerenciamento das partes interessadas corresponde ao processo de:",
+      "slug": "planejamento-gerenciamento-partes-interessadas",
+      "answer": "\"desenvolver estratégias apropriadas de gerenciamento para engajar as partes interessadas de maneira eficaz no decorrer de todo o ciclo de vida do projeto, com base na análise das suas necessidades, interesses e impacto potencial no sucesso do projeto\"."
+  },
+  {
+      "id": 7,
+      "title": "Blocos Básicos da IoT",
+      "question": "Sobre a IoT (Internet das coisas) e seus blocos básicos de construção, identifique como verdadeiras (V) ou falsas (F) as seguintes afirmativas:",
+      "slug": "blocos-basicos-iot",
+      "answer": "V - F - F - V"
+  },
+  {
+      "id": 8,
+      "title": "Melhoria Contínua no Método Lean",
+      "question": "No método Lean como a melhoria contínua é denominada?",
+      "slug": "melhoria-continua-metodo-lean",
+      "answer": "Kaizen"
+  },
+  {
+      "id": 9,
+      "title": "Alinhamento Estratégico de TI",
+      "question": "Com relação ao alinhamento estratégico de TI nas organizações, assinale a opção correta.",
+      "slug": "alinhamento-estrategico-ti",
+      "answer": "Alinhamento dinâmico consiste no processo por meio do qual é alterada a estratégia de TI em função da ocorrência de uma mudança aleatória na estratégia de negócios da empresa."
+  },
+  {
+      "id": 10,
+      "title": "Sequência de Processos no ITIL",
+      "question": "No âmbito do ITIL, quando um evento é registrado na Central de Serviços, a melhor sequência em que os processos são executados é:",
+      "slug": "sequencia-processos-itil",
+      "answer": "Gerenciamento de Incidentes, Gerenciamento de Problemas, Gerenciamento de Mudanças, Gerenciamento de Liberações."
+  }
+]
+
+
   }
   
