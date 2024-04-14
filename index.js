@@ -5,8 +5,15 @@ const router = jsonServer.router("db/db.json");
 const middlewares = jsonServer.defaults();
 
 server.get("/echo", (req, res) => {
-  res.json(req.query);
-  console.log(res);
+ // res.json(req.query);
+    // Create a JSON object to send as response
+  const response = {
+    message: "This is an echo response",
+    queryParameters: req.query
+  };
+  
+  // Send the JSON object as response
+  res.json(response);
 });
 
 server.use(middlewares);
