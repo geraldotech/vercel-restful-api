@@ -128,7 +128,7 @@
       "id": 10,
       "title": "Sequência de Processos no ITIL",
       "question": "No âmbito do ITIL, quando um evento é registrado na Central de Serviços, a melhor sequência em que os processos são executados é:",
-      "slug": "sequencia-processos-itil",
+      "slug": "sequencia-de-processos-itil",
       "answer": "Gerenciamento de Incidentes, Gerenciamento de Problemas, Gerenciamento de Mudanças, Gerenciamento de Liberações."
     }
   ]
