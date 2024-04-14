@@ -22,6 +22,22 @@ server.get("/echo", (req, res) => {
  });
 
 
+ /* creating a custom router return a single obj*/
+
+ server.get('/entregasuportex', (req,res) => {
+	const {id} = req.query
+	const entregaSuporte = router.db.get("entregasuporte").value()
+
+	const single = entregaSuporte.find(val => val.id == id)
+
+	if(!single){
+		res.json({"status:": 404, "message": 'Content not found'})
+	}
+	
+	res.json(single)
+ })
+
+
 
 
 server.use(
