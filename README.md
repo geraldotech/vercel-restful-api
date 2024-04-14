@@ -5,7 +5,7 @@
 - id
   - posts?id=2
 - like
-  - /posts?title_like=ea
+  - posts?title_like=ea
 
 
 More operators in [https://www.npmjs.com/package/json-server/v/0.17.4#operators](https://www.npmjs.com/package/json-server/v/0.17.4#operators)
