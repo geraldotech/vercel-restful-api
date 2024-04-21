@@ -24,10 +24,17 @@ server.get("/echo", (req, res) => {
 
  /* creating a custom router return a single obj*/
 
- server.get('/entregasuportex', (req,res) => {
-	const {id} = req.query
-	const entregaSuporte = router.db.get("entregasuporte").value()
+ server.get('/getqueryinfo', (req, res) => {
+	 const { id} = req.query
+	 console.log(id)
+	 res.json({id})
+ })
 
+ server.get('/entregasuportex/:id', (req,res) => {
+	const {id} = req.params
+	console.log(req.query)
+
+	const entregaSuporte = router.db.get("entregasuporte").value()
 
 	if(id){
 		const single = entregaSuporte.find(val => val.id == id)

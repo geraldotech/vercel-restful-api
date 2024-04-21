@@ -1,14 +1,36 @@
 # RESTful API with JSON Server for Vercel
 
 - RUN
-- `$ json-server --watch ./db/db.json`
+- `npm run dev`
+  - `$ json-server --watch ./db/db.json`
+
 
 - middlewares ? 
   - run `node server.json` make surce this file is import the `db.json`
 
+# Routers
+
+```js
 
 
-### just fetch https://api-restful-json.vercel.app
+- http://localhost:3000/
+- GET https://api-restful-json.vercel.app
+- GET /artists
+- GET /posts
+- GET /entregasuporte
+
+// custom router
+- GET /entregasuportex
+
+// req.params
+- GET /entregasuportex/:id
+
+// req.query
+- GET /getqueryinfo?id=34334
+
+```
+
+### just fetch 
 
 - id
   - posts?id=2
