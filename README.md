@@ -12,33 +12,34 @@
 
 ```js
 
-
 - http://localhost:3000/
 - GET https://api-restful-json.vercel.app
 - GET /artists
 - GET /posts
 - GET /entregasuporte
 
+- like
+  - GET /posts?title_like=ea
+- slug
+  - GET /entregasuporte?slug=central-de-servico-gerenciamento-nivel-servico
+  - GET /entregasuporte?slug_like=central-de-servico-gerenciamento-nivel-servico
+
 // custom router
 - GET /entregasuportex
 
 // req.params
-- GET /entregasuportex/:id
+- GET /entregasuportex/:id => 
 
 // req.query
-- GET /getqueryinfo?id=34334
+- GET /getqueryinfo?id=34334 => posts?id=2
+
 
 ```
 
 ### just fetch 
 
-- id
-  - posts?id=2
-- like
-  - posts?title_like=ea
-- slug
-  - slug=central-de-servico-gerenciamento-nivel-servico
-  - ?slug_like=central-de-servico-gerenciamento-nivel-servico
+
+
 
 
 More operators in [https://www.npmjs.com/package/json-server/v/0.17.4#operators](https://www.npmjs.com/package/json-server/v/0.17.4#operators)
