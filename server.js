@@ -50,7 +50,7 @@ server.get("/echo", (req, res) => {
 
 // rota para testes de fetch
  server.get('/status', (req,res) => {
-	 return res.json({ok: true, message: 'sucess'})
+	 return res.json({ok: true, message: 'success'})
  })
 
 
