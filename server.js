@@ -23,7 +23,6 @@ server.get("/echo", (req, res) => {
 
 
  /* creating a custom router return a single obj*/
-
  server.get('/getqueryinfo', (req, res) => {
 	 const { id} = req.query
 	 console.log(id)
@@ -47,7 +46,10 @@ server.get("/echo", (req, res) => {
 	}
 
 	return res.json(entregaSuporte)
+ })
 
+ server.get('/status/:id', (req,res) => {
+	 return res.json({ok: true})
  })
 
 
