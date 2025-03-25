@@ -48,7 +48,8 @@ server.get("/echo", (req, res) => {
 	return res.json(entregaSuporte)
  })
 
- server.get('/status/:id', (req,res) => {
+// rota para testes de fetch
+ server.get('/status', (req,res) => {
 	 return res.json({ok: true})
  })
 
