@@ -61,8 +61,6 @@
     }
   ],
   "entregasuporte": [
-    "ok": true,
-    "data" : [
       {
       "id": 1,
       "title": "Central de Serviço e Gerenciamento de Nível de Serviço",
@@ -132,8 +130,6 @@
       "question": "No âmbito do ITIL, quando um evento é registrado na Central de Serviços, a melhor sequência em que os processos são executados é:",
       "slug": "sequencia-de-processos-itil",
       "answer": "Gerenciamento de Incidentes, Gerenciamento de Problemas, Gerenciamento de Mudanças, Gerenciamento de Liberações."
-    }
-    ]
-    
+    }    
   ]
 }
