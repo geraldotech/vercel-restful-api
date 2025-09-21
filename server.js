@@ -1,71 +1,21 @@
-// JSON Server module
-const jsonServer = require("json-server");
+const path = require('path');
+const jsonServer = require('json-server');
+
 const server = jsonServer.create();
-const router = jsonServer.router("db/db.json");
 const middlewares = jsonServer.defaults();
 
+const router = jsonServer.router(path.join(__dirname, 'db', 'db.json'));
+const blogRouter = jsonServer.router(path.join(__dirname, 'db', 'blogPosts.json'));
+
 server.use(middlewares);
-// Add this before server.use(router)
+server.use(jsonServer.bodyParser);
 
+// debug: verifique se o arquivo certo foi carregado e quais chaves existem
+/* console.log('db.json ->', Object.keys(router.db.getState()));
+console.log('blogPosts.json ->', Object.keys(blogRouter.db.getState())); */
 
+// prefixos
+server.use('/blog', blogRouter);
+server.use('/', router);
 
-server.get("/echo", (req, res) => {
-	// res.json(req.query);
-		 // Create a JSON object to send as response
-	 const response = {
-		 message: "This is an echo response",
-		 queryParameters: req.query
-	 };
-	 
-	 // Send the JSON object as response
-	 res.json(response);
- });
-
-
- /* creating a custom router return a single obj*/
- server.get('/getqueryinfo', (req, res) => {
-	 const { id} = req.query
-	 console.log(id)
-	 res.json({id})
- })
-
- server.get('/entregasuportex/:id', (req,res) => {
-	const {id} = req.params
-	console.log(req.query)
-
-	const entregaSuporte = router.db.get("entregasuporte").value()
-
-	if(id){
-		const single = entregaSuporte.find(val => val.id == id)
-
-		if(!single){
-			res.json({"status:": 404, "message": 'Content not found'})
-		}		
-		res.json(single)	
-		return
-	}
-
-	return res.json(entregaSuporte)
- })
-
-// rota para testes de fetch
- server.get('/status', (req,res) => {
-	 return res.json({ok: true, message: 'success'})
- })
-
-
-
-
-server.use(
-	// Add custom route here if needed
-	jsonServer.rewriter({
-		"/api/*": "/$1",
-	})
-);
-server.use(router);
-server.listen(3000, () => {
-	console.log("JSON Server is running");
-});
-
-// Export the Server API
-module.exports = server;
+server.listen(3000, () => console.log('JSON Server on http://127.0.0.1:3000'));

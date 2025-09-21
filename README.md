@@ -34,6 +34,10 @@
 - GET /getqueryinfo?id=34334 => posts?id=2
 
 
+// blog fetch
+- GET /blog/posts?slug=front-end-games
+
+
 ```
 
 ### just fetch 
